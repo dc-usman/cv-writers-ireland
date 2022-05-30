@@ -46,7 +46,7 @@
             class="bg-white flex flex-col px-4 mx-auto lg:items-center lg:justify-between lg:flex-row  lg:px-12">
             <div class=" flex flex-row items-center justify-between">
                 <a class="flex items-center py-4 px-2" href="{{ route('home') }}">
-                    <img src="../imgs/perfect-resume-logo.png" alt="Logo" class="h-16 mt-3">
+                    <img src="{{ asset('imgs/cv-writers-ireland-logo.png') }}" alt="Logo" class="h-16 mt-3">
                 </a>
                 <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
                     <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">

@@ -99,3 +99,5 @@ Route::group(['namespace' => 'Web' ], function() {
     Route::get('{slug}',      "BlogController@show")->name('blog.show');
 
 });
+
+

@@ -60,38 +60,35 @@
 </div>
 
 <section class="container px-10 md:px-16 lg:px-24 py-5 mx-auto">
-
     <div class="flex flex-col md:flex-row">
         <div class="w-full md:w-1/3">
-            <img class="h-[22rem] mx-auto" src="../imgs/testimonials.webp" alt="">
+            <img class="h-[22rem] mx-auto" src="../imgs/testimonials.webp" alt="logo">
         </div>
         <div class="w-full md:w-2/3">
-            <div class="text-4xl font-semibold mt-10 text-center md:text-left">6,700+</div>
-            <div class="text-4xl text-center md:text-left">HAPPY CUSTOMERS</div>
+            {{-- <div class="text-4xl font-semibold mt-10 text-center md:text-left">6,700+</div> --}}
+            <div class="text-4xl text-center md:text-left">Meet Our Happy Customers</div>
             
             <!-- Swiper -->
             <div class="swiper mySwiper ">
                 <div class="swiper-wrapper mt-8 mb-20 text-center md:text-left">
-                    <div class="swiper-slide">There was an urgent requirement as only a day left for closing of job.
-                        Thanks to Perfect resume they provided with job description oriented CV in a day and I was
-                        fortunate enough to apply for it.
+                    <div class="swiper-slide">I received an exceptional resume from them. I never thought someone can improve my CV to this extent. So satisfied with their work. 
                         <div class="mt-2 text-blue-500 italic text-xl font-semibold">
-                            Abdul Kareem
+                            Martin
                         </div>
                     </div>
-                    <div class="swiper-slide">I just shared all my queries with the CV expert Writers here and they assisted me so well. They gave a perfect look to my CV
+                    <div class="swiper-slide">Hired them to write a cover letter and to improve my existing CV, I must say they add more value to my CV. Cover letter was impressive as well. I’m happily working at my dream company. Thanks to them! 
                         <div class="mt-2 text-blue-500 italic text-xl font-semibold">
-                            Aliyah
+                            Chris Mt
                         </div>
                     </div>
-                    <div class="swiper-slide">It is surprising how amazingly they managed the content of my four pages CV into two pages with proper synchronization and alignment
+                    <div class="swiper-slide">I messed up with my CV and I don’t have any time left. I contacted them for urgent support and they helped me out. Very professional company.
                         <div class="mt-2 text-blue-500 italic text-xl font-semibold">
-                            Sheikh Abdul Aziz
+                            Louisa
                         </div>
                     </div>
-                    <div class="swiper-slide">It is appreciable that how professionally they deal with their customers. Perfect resume ask for every detail before starting the work and deliver the best CV
+                    <div class="swiper-slide">They dealt with my queries with a kind attitude. Although I was panicking at the moment but they listened to my complaints and worked on it responsibly. 
                         <div class="mt-2 text-blue-500 italic text-xl font-semibold">
-                            Zayn
+                            Sawan Kumar
                         </div>
                     </div>
                     
@@ -104,6 +101,7 @@
         </div>
     </div>
 </section>
+
 
 @endsection
 

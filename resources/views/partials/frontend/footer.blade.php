@@ -100,7 +100,7 @@
 
             <div class="order-4 xl:order-4 text-center md:text-left mx-auto my-auto lg:my-0">
                 <a href="{{ route('home') }}">
-                    <img class="h-32 mx-2" src="../imgs/perfect-resume-footer-logo.webp" alt="Writing Services">
+                    <img class="h-32 mx-2" src="{{ asset('imgs/cv-writers-ireland-logo.png') }}" alt="Writing Services">
                 </a>
             </div>
 
