@@ -111,7 +111,7 @@
         <div
             class="container mx-auto flex flex-col lg:flex-row items-center space-y-4 md:space-y-0 justify-between  py-2 md:px-20">
             <p class="mx-6 text-center text-white sm:mx-0 sm:text-left">
-                © 2022. All rights reserved Perfectresume.ae
+                © 2022. All rights reserved cvwritersireland.com
             </p>
             <ul class="flex flex-col md:flex-row items-center space-x-4 text-white">
                 <li class="hover:text-primary-one">

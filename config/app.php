@@ -52,13 +52,13 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://perfectresume.ae/'),
+    'url' => env('APP_URL', 'https://cvwritersireland.com/'),
 
-    'app_name' =>  'perfectresume.ae',
+    'app_name' =>  'cvwritersireland.com',
 
-    'app_url' =>  'http://localhost:8000/',
+    'app_url' =>  'https://cvwritersireland.com/',
 
-    'app_email' => 'info@test.essaywritingireland.com',
+    'app_email' => 'info@cvwritersireland.com',
 
     'asset_url' => env('ASSET_URL', null),
 

@@ -45,8 +45,8 @@
         <div x-data="{ open: false }"
             class="bg-white flex flex-col px-4 mx-auto lg:items-center lg:justify-between lg:flex-row  lg:px-12">
             <div class=" flex flex-row items-center justify-between">
-                <a class="flex items-center py-4 px-2" href="{{ route('home') }}">
-                    <img src="{{ asset('imgs/cv-writers-ireland-logo.png') }}" alt="Logo" class="h-16 mt-3">
+                <a class="flex items-center py-2 lg:py-0  px-2" href="{{ route('home') }}">
+                    <img src="{{ asset('imgs/cv-writers-ireland-logo.png') }}" alt="Logo" class="h-20 ">
                 </a>
                 <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
                     <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -111,7 +111,7 @@
              <div>  <a href="{{ route('reviews') }}" class="block font-semibold p-2 lg:px-2 lg:py-10 hover:bg-primary-four hover:text-white lg:h-full {{ request()->routeIs('reviews') ? ' bg-primary-four text-white' : '' }}">Testimonials</a></div>
              <div>   <a href="{{ route('blogs') }}" class="block font-semibold p-2 lg:px-2 lg:py-10 hover:bg-primary-four hover:text-white lg:h-full {{ request()->routeIs('blogs')|| request()->routeIs('blog.show') ? ' bg-primary-four text-white' : '' }}">Blog</a></div>
                <div> <a href="{{ route('contact') }}" class="relative block font-semibold p-2 lg:px-2 lg:py-10 hover:bg-primary-four hover:text-white lg:h-full {{ request()->routeIs('contact') ? ' bg-primary-four text-white' : '' }}">Contact</a></div>
-                <a href="{{ route('order') }}" class="relative block font-semibold p-2  lg:p-10 bg-primary-two text-white lg:h-full {{  request()->routeIs('order') ? ' bg-primary-four text-white' : '' }} "><span class="lg:absolute lg:left-[22%]  lg:top-[37%] ">Order</span></a>
+                <a href="{{ route('order') }}" class="relative block font-semibold p-2  lg:p-10 bg-primary-two text-white lg:h-full {{ request()->routeIs('order') ? ' bg-primary-four text-white' : ''}}"><span class="lg:absolute lg:left-[22%] lg:top-[37%]">Order</span></a>
 
 
             </nav>

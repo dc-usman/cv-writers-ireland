@@ -214,7 +214,7 @@
 
     <section class="bg-primary-one px-4 md:px-16 lg:px-24 py-5">
 
-        <div class="container ">
+        <div class="container mx-auto">
             <div class="text-center text-4xl text-white py-[2.5rem]">
                 <strong>SAMPLE</strong> CV / RESUMES
             </div>

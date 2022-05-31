@@ -95,8 +95,8 @@
             <div x-data="{ open: false }"
                 class="bg-white flex flex-col px-4 mx-auto lg:items-center lg:justify-between lg:flex-row  lg:px-12">
                 <div class=" flex flex-row items-center justify-between">
-                    <a class="flex items-center py-4 px-2" href="{{ route('home') }}">
-                        <img src="{{ asset('imgs/cv-writers-ireland-logo.png') }}" alt="Logo" class="h-16 mt-3">
+                    <a class="flex items-center py-2 lg:py-0  px-2" href="{{ route('home') }}">
+                        <img src="{{ asset('imgs/cv-writers-ireland-logo.png') }}" alt="Logo" class="h-20">
                     </a>
                     <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
                         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -314,23 +314,25 @@
             </div>
             <div class="my-20 grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-x-8 mx-auto">
                 <div class="text-center text-white space-y-4">
-                    <i class="fa fa-graduation-cap text-primary-one border-8 bg-white p-12 px-10 rounded-full hover:bg-primary-one hover:text-white hover:scale-105"
+                    <i class="fa fa-edit  text-primary-one border-8 bg-white p-12 rounded-full hover:bg-primary-one hover:text-white hover:scale-105"
                         style="font-size: 50px;" aria-hidden="true"></i>
                     <p class="text-2xl"><strong>CV Writing</strong></p>
                     <p class="">
                         Get one step closer to your success with a tailored CV that will help you stand out from other candidates. All CVs are written by expert career professionals considering the job description you want to apply for. In addition, we also provide ATS-friendly and optimized CV to ensure maximum exposure to your profiles.
                     </p>
                 </div>
-                <div class="text-center text-white space-y-4">
-                    <i class="fa fa-key text-primary-one border-8 bg-white p-12 rounded-full hover:bg-primary-one hover:text-white hover:scale-105"
-                        style="font-size: 50px;" aria-hidden="true"></i>
+                <div class="text-center  text-white space-y-4">
+                     <i class="fa fa-file-alt text-primary-one border-8 bg-white p-12  rounded-full hover:bg-primary-one hover:text-white hover:scale-105"
+                        style="font-size: 50px;" aria-hidden="true"></i> 
+                        {{-- class="mx-auto text-primary-one border-8 bg-white p-12 rounded-full hover:bg-primary-one hover:text-white hover:scale-105" --}}
+                    {{-- <img src="{{ asset('imgs/icons8-compose-90.png') }}" class=""  style="width: 50px;"/> --}}
                     <p class="text-2xl"><strong>Resume Writing</strong></p>
                     <p class="">
                         CV and Resume both have a massive difference. A resume is a short summary of your work experience and background while a CV describes your whole career in detail. But to compress your career into a one-page summary is a big deal. Only experts can do it professionally. With our resume writing services, we deliver neat and optimized resumes to help you win the job.
                     </p>
                 </div>
                 <div class="text-center text-white space-y-4">
-                    <i class="fa fa-clock-o text-primary-one border-8 bg-white p-12 rounded-full hover:bg-primary-one hover:text-white hover:scale-105"
+                    <i class="fa fa-square-pen text-primary-one border-8 bg-white p-12 rounded-full hover:bg-primary-one hover:text-white hover:scale-105"
                         style="font-size: 50px;" aria-hidden="true"></i>
                     <p class="text-2xl"><strong>LinkedIn Profile Writing</strong></p>
                     <p class="">
@@ -338,7 +340,7 @@
                     </p>
                 </div>
                 <div class="text-center text-white space-y-4">
-                    <i class="fa fa-check text-primary-one border-8 bg-white p-12 rounded-full hover:bg-primary-one hover:text-white hover:scale-105"
+                    <i class="fa fa-square-check text-primary-one border-8 bg-white p-12 rounded-full hover:bg-primary-one hover:text-white hover:scale-105"
                         style="font-size: 50px;" aria-hidden="true"></i>
                     <p class="text-2xl"><strong>Cover Letter</strong></p>
                     <p class="">
@@ -346,7 +348,7 @@
                     </p>
                 </div>
                 <div class="text-center text-white space-y-4">
-                    <i class="fa fa-retweet text-primary-one border-8 bg-white p-12 px-10 rounded-full hover:bg-primary-one hover:text-white hover:scale-105"
+                    <i class="fa-regular fa-address-card text-primary-one border-8 bg-white p-12 px-10 rounded-full hover:bg-primary-one hover:text-white hover:scale-105"
                         style="font-size: 50px;" aria-hidden="true"></i>
                     <p class="text-2xl"><strong>Personal Statements</strong></p>
                     <p class="">
@@ -354,8 +356,9 @@
                     </p>
                 </div>
                 <div class="text-center text-white space-y-4">
-                    <i class="fa fa-paper-plane-o text-primary-one border-8 bg-white p-12 rounded-full hover:bg-primary-one hover:text-white hover:scale-105"
-                        style="font-size: 50px;" aria-hidden="true"></i>
+                     <i class="fa fa-pen text-primary-one border-8 bg-white p-12 rounded-full hover:bg-primary-one hover:text-white hover:scale-105"
+                        style="font-size: 50px;" aria-hidden="true"></i> 
+                       
                     <p class="text-2xl"><strong>CV Editing & Proofreading</strong></p>
                     <p class="">
                         If you have written your CV and looking for an expert opinion, you can always pitch us for help. We provide editing and proofreading service by the top-rated career counsellors to enhance your CV and make it worth the job you want to apply for. Also, we check it for grammatical and formatting errors to make it flawless.
@@ -500,7 +503,7 @@
             <strong>How</strong> it works
         </div>
         {{-- Modals --}}
-<div>        
+<div class="">        
     <div class="fixed hidden inset-0 bg-gray-600 bg-opacity-90 overflow-y-auto h-full w-full z-10" id="my-modal-1"
         data-target="7">
         <div class="relative  mx-auto p-5 border w-[90%] md:w-[32%] shadow-lg rounded-md bg-white my-4 md:my-2">
@@ -558,7 +561,7 @@
 </div>
   
 
-        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-3">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-3">
 
             <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 cursor-pointer">
                 <img class="mx-auto border-4 border-gray-300 md:rotate-[-3deg] " src="../imgs/sample-resume4.jpg" alt="logo" id="open-btn-1">
