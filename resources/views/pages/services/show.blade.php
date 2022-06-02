@@ -33,7 +33,7 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
 
-        }
+        }xz
         .service-section p{
             margin-top: 1rem;
             margin-bottom: 1rem;

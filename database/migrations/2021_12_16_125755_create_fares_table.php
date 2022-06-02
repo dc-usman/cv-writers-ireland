@@ -34,3 +34,4 @@ class CreateFaresTable extends Migration
         Schema::dropIfExists('fares');
     }
 }
+                                                                                                                                                                                                                                                                                                                                                        

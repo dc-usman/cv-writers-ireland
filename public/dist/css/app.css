@@ -541,6 +541,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .top-3 {
   top: 0.75rem;
 }
@@ -561,8 +569,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 4px;
 }
 
+.top-\[-200px\] {
+  top: -200px;
+}
+
+.top-\[200px\] {
+  top: 200px;
+}
+
+.-top-\[200px\] {
+  top: -200px;
+}
+
+.-top-\[200rem\] {
+  top: -200rem;
+}
+
+.-top-\[200re\] {
+  top: -200re;
+}
+
 .z-40 {
   z-index: 40;
+}
+
+.-z-10 {
+  z-index: -10;
 }
 
 .z-10 {
@@ -843,8 +875,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 0.25rem;
 }
 
-.h-16 {
-  height: 4rem;
+.h-20 {
+  height: 5rem;
 }
 
 .h-6 {
@@ -875,12 +907,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 8rem;
 }
 
-.h-2 {
-  height: 0.5rem;
+.h-16 {
+  height: 4rem;
 }
 
-.h-20 {
-  height: 5rem;
+.h-\[2rem\] {
+  height: 2rem;
+}
+
+.h-\[19rem\] {
+  height: 19rem;
 }
 
 .min-h-screen {
@@ -1310,8 +1346,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 0.9;
 }
 
-.bg-hero-bg {
-  background-image: url('../../imgs/home-bannner.svg');
+.bg-hero-bg-two {
+  background-image: url('../../imgs/resume1-scaled.jpg');
 }
 
 .bg-gradient-to-r {
@@ -1371,10 +1407,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-10 {
   padding: 2.5rem;
-}
-
-.p-14 {
-  padding: 3.5rem;
 }
 
 .py-4 {
@@ -1485,16 +1517,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
 }
 
 .pt-4 {
@@ -1724,6 +1746,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 1;
 }
 
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
 .opacity-50 {
   opacity: 0.5;
 }
@@ -1915,6 +1945,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(177 107 73 / var(--tw-text-opacity));
 }
 
+.hover\:text-primary-light:hover {
+  --tw-text-opacity: 1;
+  color: rgb(184 121 91 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1951,6 +1986,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-primary-dark:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(123 74 51 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-opacity-75:focus {
@@ -2377,6 +2417,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 3rem;
   }
 
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .lg\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -2390,11 +2435,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .lg\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 
   .lg\:text-left {

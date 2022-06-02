@@ -13,4 +13,8 @@
     .pricing-tab-active{
         @apply bg-primary-one hover:bg-primary-two;
     }
+
+    .home-bg{
+        @apply bg-gradient-to-r from-primary-light to-primary-dark ;
+    }
 }

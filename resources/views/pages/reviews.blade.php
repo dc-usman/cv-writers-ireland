@@ -62,7 +62,7 @@
 <section class="container px-10 md:px-16 lg:px-24 py-5 mx-auto">
     <div class="flex flex-col md:flex-row">
         <div class="w-full md:w-1/3">
-            <img class="h-[22rem] mx-auto" src="../imgs/testimonials.webp" alt="logo">
+            <img class="h-[19rem] mx-auto" src="{{ asset('imgs/cv-writing-ireland-testimonial-image-removebg-preview.png') }}" alt="logo">
         </div>
         <div class="w-full md:w-2/3">
             {{-- <div class="text-4xl font-semibold mt-10 text-center md:text-left">6,700+</div> --}}

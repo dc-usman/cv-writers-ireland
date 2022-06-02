@@ -21,6 +21,31 @@
             margin-left: 6rem;
         }
 
+        
+.hero { 
+  /* position: relative;  */
+  /* height: 00%; */
+  /* width: 100%; */
+  /* top: -540px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  background-image: url('../../imgs/resume1-scaled.jpg');
+  background-size: cover;
+}
+
+  .hero::before {
+    content: "";
+     position: absolute; 
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* background-color: rgba(0,0,0,0.25); */
+    background-color: rgba(216, 160, 109, 0.73);
+  }
+
+
         @media(max-width:767px) {
             .swiper-button-next {
                 left: auto !important;
@@ -47,7 +72,8 @@
     </style>
 
     {{-- topbar+navbar+hero --}}
-    <div class="bg-hero-bg bg-no-repeat bg-cover">
+    
+    <div class=" relative" >
         {{-- Topbar --}}
         <div class="container mx-auto"> 
             <div class=" hidden md:flex   flex-row justify-between py-6">
@@ -205,9 +231,11 @@
 
             </div>
         </div>
-
+    
+    <div class="hero  absolute -z-10  w-full h-full top-0 left-0" ></div>
+    {{-- bg-hero-bg-two bg-no-repeat bg-cover opacity-30  opacity-20 --}}
     </div>
-
+    
     {{-- Services --}}
     <section class="container mx-auto max-w-screen-xl pb-4 -mt-8">
         <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 px-4">
@@ -633,7 +661,7 @@
      <section class="container px-10 md:px-16 lg:px-24 py-5 mx-auto">
         <div class="flex flex-col md:flex-row">
             <div class="w-full md:w-1/3">
-                <img class="h-[22rem] mx-auto" src="../imgs/testimonials.webp" alt="logo">
+                <img class="h-[19rem] mx-auto" src="{{ asset('imgs/cv-writing-ireland-testimonial-image-removebg-preview.png') }}" alt="logo">
             </div>
             <div class="w-full md:w-2/3">
                 {{-- <div class="text-4xl font-semibold mt-10 text-center md:text-left">6,700+</div> --}}
