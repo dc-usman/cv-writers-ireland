@@ -53,18 +53,18 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.', '
 
 Route::group(['namespace' => 'Web' ], function() {
 
-    Route::view('/ksa'     ,     'pages.flag-one')->name('kas.flag');
-    Route::view('/cv-qatar',     'pages.flag-two')->name('qatar.flag');
-    Route::view('/cv-oman',      'pages.flag-three')->name('oman.flag');
-    Route::view('/cv-kuwait',     'pages.flag-four')->name('kuwait.flag');
-    Route::view('/bahrain',        'pages.flag-five')->name('bahrain.flag');
+    // Route::view('/ksa'     ,     'pages.flag-one')->name('kas.flag');
+    // Route::view('/cv-qatar',     'pages.flag-two')->name('qatar.flag');
+    // Route::view('/cv-oman',      'pages.flag-three')->name('oman.flag');
+    // Route::view('/cv-kuwait',     'pages.flag-four')->name('kuwait.flag');
+    // Route::view('/bahrain',        'pages.flag-five')->name('bahrain.flag');
     Route::view('/guarantees', 'pages.legal.gaurantee')->name('guarantee');
     Route::view('/refund-policy', 'pages.legal.refund')->name('refund');
     Route::view('/cookie-policy' , 'pages.legal.cookie')->name('cookie');
     // PagesController
     Route::get('/',             "PagesController@index")->name('home');
     Route::get('/about',        "PagesController@about")->name('about');
-    Route::get('/blog',         "PagesController@blogs")->name('blogs');
+    // Route::get('/blog',         "PagesController@blogs")->name('blogs');
     Route::get('/prices',       "PagesController@pricing")->name('price');
     Route::get('/samples',      "PagesController@samples")->name('samples');
     Route::get('/reviews',      "PagesController@reviews")->name('reviews');
@@ -89,14 +89,14 @@ Route::group(['namespace' => 'Web' ], function() {
  
     // ServicesController
     // Route::get('/',           "ServicesController@create")->name('services');
-    // Route::get('{slug}',      "ServicesController@show")->name('services.show');
-    Route::get('/cover-letter-writing',"ServicesController@pageone")->name('services.one');
-    Route::get('/linkedin-profile-writing',"ServicesController@pagetwo")->name('services.two');
-    Route::get('/resume-editing',"ServicesController@pagethree")->name('services.three');
-    Route::get('/cv-editing',"ServicesController@pagefour")->name('services.four');
+    Route::get('{slug}',      "ServicesController@show")->name('services.show');
+    // Route::get('/cover-letter-writing',"ServicesController@pageone")->name('services.one');
+    // Route::get('/linkedin-profile-writing',"ServicesController@pagetwo")->name('services.two');
+    // Route::get('/resume-editing',"ServicesController@pagethree")->name('services.three');
+    // Route::get('/cv-editing',"ServicesController@pagefour")->name('services.four');
 
     // BlogsController
-    Route::get('{slug}',      "BlogController@show")->name('blog.show');
+    // Route::get('{slug}',      "BlogController@show")->name('blog.show');
 
 });
 

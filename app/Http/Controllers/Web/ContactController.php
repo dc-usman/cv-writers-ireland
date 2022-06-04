@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Web;
 
 use App\Contact;
 use App\Country;
+use App\WebSetting;
 use App\Events\ContactCreated;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreContactRequest;
@@ -17,8 +18,8 @@ class ContactController extends Controller
     public function create()
     {
         $countries = Country::all();
-
-        return view('pages.contact', compact('countries'));
+        $web_setting = WebSetting::first();    
+        return view('pages.contact', compact('countries','web_setting'));
     }
 
     public function store(StoreContactRequest $request)

@@ -100,9 +100,10 @@
         </div>
     </section>
     {{-- Service Dynamic Content --}}
+    @if (!empty($service))
     <section class="service-section container mx-auto px-3 md:px-14 my-6 md:min-h-[15rem]">
         {!! $service->html !!}            
-    </section>
-    
+    </section>    
+    @endif
 @endsection
 

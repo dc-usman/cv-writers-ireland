@@ -99,7 +99,8 @@
     {{-- Footer --}}
     @include('partials.frontend.footer')
 
-    {{-- {{ TawkTo::widgetCode("https://embed.tawk.to/622b3ce01ffac05b1d7e17ff/1ftsebjnr") }} --}}
+    {{-- Taekto --}}
+    {{ TawkTo::widgetCode("https://embed.tawk.to/6298c9efb0d10b6f3e755d1e/1g4id9k99") }} 
 
     {{-- scripts --}}
 

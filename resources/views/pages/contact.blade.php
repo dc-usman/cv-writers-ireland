@@ -80,16 +80,16 @@
                             <a href="https://twitter.com/PerfectResumeae"> <i class="fa fa-twitter"></i> Twitter</a>
                         </p>
                         <p>
-                            <a href="https://www.facebook.com/perfectresumeuae/"> <i class="fa fa-facebook"></i> Facebook</a>
+                            <a href="{{ $web_setting->facebook_link }}"> <i class="fa fa-facebook"></i> Facebook</a>
                         </p>
                         <p>
-                            <a href="https://www.instagram.com/accounts/login/?next=/perfectresumeuae/"> <i class="fa fa-instagram"></i> Instagram</a>
+                            <a href="{{ $web_setting->instagram_link }}"> <i class="fa fa-instagram"></i> Instagram</a>
                         </p>
                         <p>
-                            <a href="https://api.whatsapp.com/send/?phone=971545098085&text=how+can+I+get+a+fresh+resume%3F&app_absent=0"> <i class="fa fa-whatsapp"></i> Whatsapp</a>
+                            <a href="https://api.whatsapp.com/send/?phone={{$web_setting->contact}}&text=how+can+I+get+a+fresh+resume%3F&app_absent=0"> <i class="fa fa-whatsapp"></i> Whatsapp</a>
                         </p>
                         <p>
-                            <a href="mailto:info@perfectresume.ae"> <i class="fa fa-envelope"></i> info@perfectresume.ae</a>
+                            <a href="mailto:{{ $web_setting->email }}"> <i class="fa fa-envelope"></i> {{ $web_setting->email }}</a>
                         </p>
 
 

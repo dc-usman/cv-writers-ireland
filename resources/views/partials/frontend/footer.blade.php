@@ -12,9 +12,9 @@
                     <li class="text-primary-one hover:text-white py-1">
                         <a href="{{ route('price') }}" class="text-white hover:text-primary-one cursor-pointer"> Prices </a>
                     </li>
-                    <li class="text-primary-one hover:text-white py-1">
+                    {{-- <li class="text-primary-one hover:text-white py-1">
                         <a href="{{ route('blogs') }}" class="text-white hover:text-primary-one cursor-pointer"> Blog </a>
-                    </li>
+                    </li> --}}
                     <li class="text-primary-one hover:text-white py-1">
                         <a href="{{ route('order') }}" class="text-white hover:text-primary-one cursor-pointer"> Order </a>
                     </li>
@@ -37,10 +37,13 @@
                 <h4 class="uppercase text-xl font-bold ">SERVICES WE OFFER</h4>
                 <hr class="w-full md:w-2/6 mt-2">
                 <ul class="md:list-disc my-2 md:ml-6">
+                    @foreach ($services as $service)
                     <li class="text-primary-one hover:text-white py-1">
-                        <a href="{{ route('services.four') }}" class="text-white hover:text-primary-one cursor-pointer"> CV Editing </a>
-                    </li>
-                    <li class="text-primary-one hover:text-white py-1">
+                        <a href="{{ route('services.show',$service->slug) }}" class="text-white hover:text-primary-one cursor-pointer">{{$service->name}}</a>
+                    </li>    
+                    @endforeach
+                    
+                    {{-- <li class="text-primary-one hover:text-white py-1">
                         <a href="{{ route('services.three') }}" class="text-white hover:text-primary-one cursor-pointer"> Resume Editing </a>
                     </li>
                     <li class="text-primary-one hover:text-white py-1">
@@ -48,8 +51,8 @@
                     </li>
                     <li class="text-primary-one hover:text-white py-1">
                         <a href="{{ route('services.two') }}" class="text-white hover:text-primary-one cursor-pointer"> LinkedIn Profile Writing </a>
-                    </li>
-                    <li class="text-primary-one hover:text-white py-1">
+                    </li> --}}
+                    {{-- <li class="text-primary-one hover:text-white py-1">
                         <a href="{{ route('kas.flag') }}" class="text-white hover:text-primary-one cursor-pointer"> Saudi Arabia </a>
                     </li>
                     <li class="text-primary-one hover:text-white py-1">
@@ -63,7 +66,7 @@
                     </li>
                     <li class="text-primary-one hover:text-white py-1">
                         <a href="{{ route('bahrain.flag') }}" class="text-white hover:text-primary-one cursor-pointer"> Bahrain </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
 
@@ -84,16 +87,16 @@
                         <a href="https://api.whatsapp.com/send/?phone=971545098085&text=how+can+I+get+a+fresh+resume%3F&app_absent=0" class="hover:text-primary-one"> <i class="fa fa-whatsapp"></i> Whatsapp</a>
                     </p>
                     <p>
-                        <a href="mailto:info@perfectresume.ae" class="hover:text-primary-one"> <i class="fa fa-envelope"></i> info@perfectresume.ae</a>
+                        <a href="mailto:{{ $web_setting->email }}" class="hover:text-primary-one"> <i class="fa fa-envelope"></i> {{ $web_setting->email }}</a>
                     </p>
 
-                    <div class="grid grid-cols-1 md:grid-cols-5  md:absolute md:left-[61.2%] lg:left-[64.2%] xl:left-[54.2%]">
+                    {{-- <div class="grid grid-cols-1 md:grid-cols-5  md:absolute md:left-[61.2%] lg:left-[64.2%] xl:left-[54.2%]">
                         <div class=""><a href="{{ route('oman.flag') }}"><img src="{{ asset('imgs/flags/pr-omanflag-removebg-preview.png') }}" class="h-12   mx-auto " alt="pr"></a></div>
                         <div><a href="{{ route('kas.flag') }}"><img src="{{ asset('imgs/flags/pr-saudi3-removebg-preview.png') }}" class="h-12  mx-auto " alt="pr"></a></div>
                         <div><a href="{{ route('kuwait.flag') }}"><img src="{{ asset('imgs/flags/pr-kuwait-flag.png') }}" class="h-12 mx-auto" alt="pr"></a></div>
                         <div><a href="{{ route('qatar.flag') }}"><img src="{{ asset('imgs/flags/pr-qatar-flag2-removebg-preview.png') }}" class="h-12 mx-auto" alt="pr"></a></div>
                         <div><a href="{{ route('bahrain.flag') }}"><img src="{{ asset('imgs/flags/pr-bahrainflag5-removebg-preview.png') }}" class="h-12 mx-auto " alt="pr"></a></div>
-                    </div>
+                    </div> --}}
 
                 </div>
             </div>
@@ -131,7 +134,7 @@
 {{-- Whatsapp icon --}}
 <div class="fixed bottom-4 left-4 z-20 cursor-pointer ">
     <div class="h-12 w-12 bg-green-500 shadow-xl rounded-full">
-        <a href="https://api.whatsapp.com/send?phone=971545098085" target="_blank" class="absolute bottom-[4px] left-[4px]  rounded-full cursor-pointer">
+        <a href="https://api.whatsapp.com/send?phone={{$web_setting->contact}}" target="_blank" class="absolute bottom-[4px] left-[4px]  rounded-full cursor-pointer">
             <svg width="40px" height="40px" viewBox="0 0 1219.547 1225.016">
                 <path fill="#E0E0E0" d="M1041.858 178.02C927.206 63.289 774.753.07 612.325 0 277.617 0 5.232 272.298 5.098 606.991c-.039 106.986 27.915 211.42 81.048 303.476L0 1225.016l321.898-84.406c88.689 48.368 188.547 73.855 290.166 73.896h.258.003c334.654 0 607.08-272.346 607.222-607.023.056-162.208-63.052-314.724-177.689-429.463zm-429.533 933.963h-.197c-90.578-.048-179.402-24.366-256.878-70.339l-18.438-10.93-191.021 50.083 51-186.176-12.013-19.087c-50.525-80.336-77.198-173.175-77.16-268.504.111-278.186 226.507-504.503 504.898-504.503 134.812.056 261.519 52.604 356.814 147.965 95.289 95.36 147.728 222.128 147.688 356.948-.118 278.195-226.522 504.543-504.693 504.543z">
                 </path>
