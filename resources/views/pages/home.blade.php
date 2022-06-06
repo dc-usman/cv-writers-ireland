@@ -176,7 +176,7 @@
                             <div class="px-2 py-2 rounded-md shadow bg-white">
                                 <ul>
                                     @foreach ( $services as $service )
-                                    <li><a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-blue-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                    <li><a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-orange-200 focus:bg-orange-300 focus:outline-none focus:shadow-outline"
                                         href="{{ route('services.show',$service->slug) }}">{{ $service->name }}</a></li>    
                                     @endforeach
                                     {{-- <li><a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-blue-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
@@ -329,7 +329,7 @@
     </section>
 
     {{-- CV Maker --}}
-    <section class="px-4 md:px-16 lg:px-24 py-5 relative">
+    <section class="px-4 md:px-16 lg:px-24 py-5 ">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2">
             <div class="space-y-4">
                 <h3 class="text-2xl py-4">
@@ -341,27 +341,27 @@
                     overwhelming. But what if you get the best CV writers who are also affordable from one platform? That’s
                     what we are here to serve. Our writers can help you with a job-specific CV that will also guarantee the
                     interview call from the desired recruiter. </p>
-                <p><strong>Impeccable Formatting</strong></p>
+                <p><strong>Tailored CVs</strong></p>
                 <p>
                     So there’s a CV in your email and you drop it everywhere expecting to get the interview call, isn’t it?
                     With the growing competition, a general CV goes directly to the trash. But with our writer's expertise,
                     you can get a tailored resume that increases the chances of getting the interview call within a short
                     time. </p>
-                <p><strong>Tailored CVs</strong></p>
+                <p><strong>Impeccable Formatting</strong></p>
                 <p>A recruiter spends only 60 seconds on your CV. If it’s poorly formatted, they can directly reject it. A
                     well-formatted CV grabs the recruiter’s attention and reflects professionalism. Our Irish CV writers are
                     prolific in this job. They can’t only help in formatting but can also place your education, experience,
                     and skills in a way that will look appealing to HR officers.
                 </p>
             </div>
-            <div class="my-auto mx-auto ">
+            <div class="my-auto mx-auto relative">
                 <img src="{{ asset('imgs/cv-writers-ireland-model-holding-page.jpg') }}" alt="logo"
                     class="w-full">
+                    <img src="{{ asset('imgs/cv-writers-ireland-logo.png') }}"
+                    class="w-[30%] absolute top-[30%] right-[29%]">
+    
             </div>
-            <div>
-                <img src="{{ asset('imgs/cv-writers-ireland-logo.png') }}"
-                    class="w-44 absolute top-[15rem] right-[18rem]">
-            </div>
+                                       
         </div>
     </section>
 
@@ -406,7 +406,7 @@
     {{-- <!-- Senior Level Help --> --}}
     <section class="bg-primary-one">
         <div class="container px-4 md:px-16 lg:px-24 py-12 mx-auto text-white space-y-4">
-            <p><strong>I’m Looking for CV Writers Dublin. Can You Help?</strong></p>
+            <p class="text-3xl "><strong>I’m Looking for CV Writers Dublin. Can You Help?</strong></p>
             <p>
                 Yes, we can. We know professional CV writers Dublin aren’t easily available online. If you want the best
                 writer, you need to dig deep on the Internet or freelancing websites. But not to worry as we have a solution
@@ -515,8 +515,8 @@
             <div class="text-center text-4xl text-white pb-4">
                 <strong>How</strong> it works
             </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-7 pb-3 my-5">
+    
+            <div class="grid grid-cols-1 md:grid-cols-7 pb-3 my-5">
                 <div class="text-white text-center mx-auto">
                     <i class="fa fa-pie-chart text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                     <hr class="w-1/2 my-4 mx-auto">
@@ -524,62 +524,62 @@
                         Choose a service
                     </p>
                 </div>
-
+    
                 <div class="hidden md:block mx-auto">
                     <i class="fa fa-long-arrow-right text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                 </div>
-
+    
                 <div class="block md:hidden mx-auto">
                     <i class="fa fa-long-arrow-down text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                 </div>
-
+    
                 <div class="text-white text-center">
                     <i class="fa fa-file-text-o text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                     <hr class="w-1/2 my-4 mx-auto">
                     <p class="text-lg font-semibold">
-                        Choose a service
+                        Fill out order form 
                     </p>
                 </div>
-
+    
                 <div class="hidden md:block mx-auto">
                     <i class="fa fa-long-arrow-right text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                 </div>
-
+    
                 <div class="block md:hidden mx-auto">
                     <i class="fa fa-long-arrow-down text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                 </div>
-
+    
                 <div class="text-white text-center">
                     <i class="fa fa-comment-o text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                     <hr class="w-1/2 my-4 mx-auto">
                     <p class="text-lg font-semibold">
-                        Choose a service
+                        Give us the instructions
                     </p>
                 </div>
-
+    
                 <div class="hidden md:block mx-auto">
                     <i class="fa fa-long-arrow-right text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                 </div>
-
+    
                 <div class="block md:hidden mx-auto">
                     <i class="fa fa-long-arrow-down text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                 </div>
-
+    
                 <div class="text-white text-center">
                     <i class="fa fa-download text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                     <hr class="w-1/2 my-4 mx-auto">
                     <p class="text-lg font-semibold">
-                        Choose a service
+                        Download your paper
                     </p>
                 </div>
-
+    
             </div>
             <hr>
             <p class="text-white text-center text-lg my-2">
                 Your resume is the first interaction with your employer. Make the most of this opportunity by getting an
                 interview-winning resume created by us.
             </p>
-
+    
             <div class="text-center my-8 ">
                 <a href="{{ route('order') }}" class="group">
                     <span class="bg-white font-semibold py-2 px-4 group-hover:bg-primary-two group-hover:text-white">Get
@@ -619,13 +619,7 @@
                     make it possible for you at economical rates. Even if you want CV writing service Northern Ireland, you
                     can ask us and get it done at budget-friendly pricing.
                 </p>
-                <p>
-                    If you’re the one who doesn't like your current job or career, we’ll help you make the switch. The
-                    job
-                    market in UAE is evolving with the time so your CV should adopt the pace as well. Connect with our
-                    CV
-                    writing Dubai and make a CV, you'll be proud to have.
-                </p>
+               
             </div>
             <div class="my-auto mx-auto">
                 <img src="../imgs/perfect-cv.webp" alt="logo" class="w-full">
@@ -702,19 +696,19 @@
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-3">
 
             <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 cursor-pointer">
-                <img class="mx-auto border-4 border-gray-300 md:rotate-[-3deg] " src="../imgs/sample-resume4.jpg"
+                <img class="h-80 mx-auto border-4 border-gray-300 md:rotate-[-3deg] " src="../imgs/sample-resume4.jpg"
                     alt="logo" id="open-btn-1">
             </div>
             <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 cursor-pointer">
-                <img class="mx-auto border-4 border-gray-300 md:rotate-[3deg]" src="../imgs/sample-resume3.jpg" alt="logo"
+                <img class="h-80 mx-auto border-4 border-gray-300 md:rotate-[3deg]" src="{{ asset('imgs/sample/pr-sample-6.jpg') }}" alt="logo"
                     id="open-btn-2">
             </div>
             <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 cursor-pointer">
-                <img class="mx-auto border-4 border-gray-300 md:rotate-[-3deg]" src="../imgs/sample-resume2.jpg" alt="logo"
+                <img class="h-80 mx-auto border-4 border-gray-300 md:rotate-[-3deg]" src="../imgs/sample-resume2.jpg" alt="logo"
                     id="open-btn-3">
             </div>
             <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 cursor-pointer">
-                <img class="mx-auto border-4 border-gray-300 md:rotate-[3deg]" src="../imgs/sample-resume1.jpg" alt="logo"
+                <img class="h-80 mx-auto border-4 border-gray-300 md:rotate-[3deg]" src="../imgs/sample-resume1.jpg" alt="logo"
                     id="open-btn-4">
             </div>
         </div>
@@ -735,7 +729,7 @@
     <section class="bg-primary-two">
         <div class="container px-4 md:px-16 lg:px-24 py-5 mx-auto text-white space-y-4">
 
-            <h3 class="text-2xl my-3">
+            <h3 class="text:3xl md:text-4xl my-3">
                 Time to Get the Most Awaited Interview Call
             </h3>
             <p class="my-4">
@@ -764,9 +758,9 @@
                 career in space, tech, agriculture, medicines or law, our CV writing Dublin, Limerick, Waterford, and
                 Galway, Ireland is the only thing you need. Pave your journey to success today.</p>
 
-            <div class="text-3xl my-3">
+            {{-- <div class="text-3xl my-3">
                 How can you <strong> Connect to our Resume Writers? </strong>
-            </div>
+            </div> --}}
             <div class="text-3xl my-3 uppercase font-semibold">
                 Hire Us to Get a Personalized, Well-formatted, and Impressive CV within Short Time
             </div>
@@ -789,7 +783,7 @@
     <section class="container px-10 md:px-16 lg:px-24 py-5 mx-auto">
         <div class="flex flex-col md:flex-row">
             <div class="w-full md:w-1/3">
-                <img class="h-full mx-auto"
+                <img class=" mx-auto"
                     src="{{ asset('imgs/cv-writing-ireland-testimonial-image-removebg-preview.png') }}" alt="logo">
             </div>
             <div class="w-full md:w-2/3">
@@ -801,26 +795,26 @@
                     <div class="swiper-wrapper mt-8 mb-20 text-center md:text-left">
                         <div class="swiper-slide">I received an exceptional resume from them. I never thought someone can
                             improve my CV to this extent. So satisfied with their work.
-                            <div class="mt-2 text-blue-500 italic text-xl font-semibold">
+                            <div class="mt-2  text-orange-800 italic text-xl font-semibold">
                                 Martin
                             </div>
                         </div>
                         <div class="swiper-slide">Hired them to write a cover letter and to improve my existing CV, I
                             must say they add more value to my CV. Cover letter was impressive as well. I’m happily working
                             at my dream company. Thanks to them!
-                            <div class="mt-2 text-blue-500 italic text-xl font-semibold">
+                            <div class="mt-2  text-orange-800 italic text-xl font-semibold">
                                 Chris Mt
                             </div>
                         </div>
                         <div class="swiper-slide">I messed up with my CV and I don’t have any time left. I contacted them
                             for urgent support and they helped me out. Very professional company.
-                            <div class="mt-2 text-blue-500 italic text-xl font-semibold">
+                            <div class="mt-2  text-orange-800 italic text-xl font-semibold">
                                 Louisa
                             </div>
                         </div>
                         <div class="swiper-slide">They dealt with my queries with a kind attitude. Although I was
                             panicking at the moment but they listened to my complaints and worked on it responsibly.
-                            <div class="mt-2 text-blue-500 italic text-xl font-semibold">
+                            <div class="mt-2  text-orange-800 italic text-xl font-semibold">
                                 Sawan Kumar
                             </div>
                         </div>

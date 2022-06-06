@@ -33,10 +33,11 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
 
-        }xz
+        }
+
         .service-section p{
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+            margin-top:1rem;
+            margin-bottom:1rem;
         }
         .service-section a{
             --tw-text-opacity: 1;

@@ -72,22 +72,22 @@
             <div class="swiper mySwiper ">
                 <div class="swiper-wrapper mt-8 mb-20 text-center md:text-left">
                     <div class="swiper-slide">I received an exceptional resume from them. I never thought someone can improve my CV to this extent. So satisfied with their work. 
-                        <div class="mt-2 text-blue-500 italic text-xl font-semibold">
+                        <div class="mt-2 text-orange-800 italic text-xl font-semibold">
                             Martin
                         </div>
                     </div>
                     <div class="swiper-slide">Hired them to write a cover letter and to improve my existing CV, I must say they add more value to my CV. Cover letter was impressive as well. I’m happily working at my dream company. Thanks to them! 
-                        <div class="mt-2 text-blue-500 italic text-xl font-semibold">
+                        <div class="mt-2 text-orange-800 italic text-xl font-semibold">
                             Chris Mt
                         </div>
                     </div>
                     <div class="swiper-slide">I messed up with my CV and I don’t have any time left. I contacted them for urgent support and they helped me out. Very professional company.
-                        <div class="mt-2 text-blue-500 italic text-xl font-semibold">
+                        <div class="mt-2 text-orange-800 italic text-xl font-semibold">
                             Louisa
                         </div>
                     </div>
                     <div class="swiper-slide">They dealt with my queries with a kind attitude. Although I was panicking at the moment but they listened to my complaints and worked on it responsibly. 
-                        <div class="mt-2 text-blue-500 italic text-xl font-semibold">
+                        <div class="mt-2 text-orange-800 italic text-xl font-semibold">
                             Sawan Kumar
                         </div>
                     </div>

@@ -21,9 +21,9 @@
                     <li class="text-primary-one hover:text-white py-1">
                         <a href="{{ route('reviews') }}" class="text-white hover:text-primary-one cursor-pointer"> Reviews </a>
                     </li>
-                    <li class="text-primary-one hover:text-white py-1">
+                    {{-- <li class="text-primary-one hover:text-white py-1">
                         <a href="{{ route('sitemap') }}" class="text-white hover:text-primary-one cursor-pointer"> Sitemap </a>
-                    </li>
+                    </li> --}}
                     <li class="text-primary-one hover:text-white py-1">
                         <a href="{{ route('contact') }}" class="text-white hover:text-primary-one cursor-pointer"> Contact </a>
                     </li>
@@ -78,13 +78,13 @@
                         <a href="https://twitter.com/PerfectResumeae" class="hover:text-primary-one"> <i class="fa fa-twitter"></i> Twitter</a>
                     </p>
                     <p>
-                        <a href="https://www.facebook.com/perfectresumeuae/" class="hover:text-primary-one"> <i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="{{ $web_setting->facebook_link }}" class="hover:text-primary-one"> <i class="fa fa-facebook"></i> Facebook</a>
                     </p>
                     <p>
-                        <a href="https://www.instagram.com/accounts/login/?next=/perfectresumeuae/" class="hover:text-primary-one"> <i class="fa fa-instagram"></i> Instagram</a>
+                        <a href="{{ $web_setting->instagram_link }}" class="hover:text-primary-one"> <i class="fa fa-instagram"></i> Instagram</a>
                     </p>
                     <p>
-                        <a href="https://api.whatsapp.com/send/?phone=971545098085&text=how+can+I+get+a+fresh+resume%3F&app_absent=0" class="hover:text-primary-one"> <i class="fa fa-whatsapp"></i> Whatsapp</a>
+                        <a href="https://api.whatsapp.com/send/?phone={{$web_setting->contact}}&text=how+can+I+get+a+fresh+resume%3F&app_absent=0" class="hover:text-primary-one"> <i class="fa fa-whatsapp"></i> Whatsapp</a>
                     </p>
                     <p>
                         <a href="mailto:{{ $web_setting->email }}" class="hover:text-primary-one"> <i class="fa fa-envelope"></i> {{ $web_setting->email }}</a>

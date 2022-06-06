@@ -23,38 +23,41 @@
             <div class="mx-10 my-4 lg:my-0">
                 <h4 class="text-2xl font-semibold">PERFECT RESUME</h4>
                 <ul class="list-disc mx-4 my-2 text-primary-one">
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('about') }}">About</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('price') }}">Prices</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('blogs') }}">Blog</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('order') }}">Order</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('reviews') }}">Reviews</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('sitemap') }}">Sitemap</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('contact') }}">Contact</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('samples') }}">Samples</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('about') }}">About</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('price') }}">Prices</a></li>
+                    {{-- <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('blogs') }}">Blog</a></li> --}}
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('order') }}">Order</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('reviews') }}">Reviews</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('sitemap') }}">Sitemap</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('contact') }}">Contact</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('samples') }}">Samples</a></li>
                 </ul>
             </div>
             <div class="mx-10 my-4 lg:my-0">
                 <h4 class="text-2xl font-semibold">Services</h4>
                 <ul class="list-disc mx-4 my-2 text-primary-one">
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('services.four') }}">CV Editing</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('services.three') }}">Resume Editing</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('services.one') }}">Cover Letter Writing</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('services.two') }}">LinkedIn Profile Writing</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('kas.flag') }}">Saudia Arabia</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('kuwait.flag') }}">Kuwait</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('oman.flag') }}">Oman</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('qatar.flag') }}">Qatar</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('bahrain.flag') }}">Bahrain</a></li>
+                    @foreach ($services as $service)
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('services.show',$service->slug) }}">{{ $service->name }}</a></li>    
+                    @endforeach
+                    
+                    {{-- <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('services.three') }}">Resume Editing</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('services.one') }}">Cover Letter Writing</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('services.two') }}">LinkedIn Profile Writing</a></li> --}}
+                    {{-- <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('kas.flag') }}">Saudia Arabia</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('kuwait.flag') }}">Kuwait</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('oman.flag') }}">Oman</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('qatar.flag') }}">Qatar</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('bahrain.flag') }}">Bahrain</a></li> --}}
                 </ul>
             </div>
             <div class="mx-10 my-4 lg:my-0">
                 <h4 class="text-2xl font-semibold">Policies</h4>
                 <ul class="list-disc mx-4 my-2  text-primary-one ">
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('policy.terms-and-conditions') }}">Terms & Condition</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('policy.privacy-policy') }}">Privacy Policy</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('refund') }}">Refund Policy</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('cookie') }}">Cookie Policy</a></li>
-                    <li class="hover:text-cyan-300 hover:underline my-2"><a href="{{ route('guarantee') }}">Guarantees</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('policy.terms-and-conditions') }}">Terms & Condition</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('policy.privacy-policy') }}">Privacy Policy</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('refund') }}">Refund Policy</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('cookie') }}">Cookie Policy</a></li>
+                    <li class="hover:text-orange-900 hover:underline my-2"><a href="{{ route('guarantee') }}">Guarantees</a></li>
                     
                 </ul>
             </div>

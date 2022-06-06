@@ -68,9 +68,9 @@ Route::group(['namespace' => 'Web' ], function() {
     Route::get('/prices',       "PagesController@pricing")->name('price');
     Route::get('/samples',      "PagesController@samples")->name('samples');
     Route::get('/reviews',      "PagesController@reviews")->name('reviews');
-    Route::get('/sitemap',      "PagesController@sitemap")->name('sitemap');
-    Route::post('/get-fare',    "PagesController@getFare")->name('get.fare');
-    Route::post('/order-query', "PagesController@orderQuery")->name('order.query');
+    // Route::get('/sitemap',      "PagesController@sitemap")->name('sitemap');
+    // Route::post('/get-fare',    "PagesController@getFare")->name('get.fare');
+    // Route::post('/order-query', "PagesController@orderQuery")->name('order.query');
 
     // ContactController
     Route::get('/contact',    "ContactController@create")->name('contact');

@@ -15,7 +15,7 @@
             <strong>How</strong> it works
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-7 pb-3 my-5">
+        <div class="grid grid-cols-1 md:grid-cols-7 pb-3 my-5">
             <div class="text-white text-center mx-auto">
                 <i class="fa fa-pie-chart text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                 <hr class="w-1/2 my-4 mx-auto">
@@ -36,7 +36,7 @@
                 <i class="fa fa-file-text-o text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                 <hr class="w-1/2 my-4 mx-auto">
                 <p class="text-lg font-semibold">
-                    Choose a service
+                    Fill out order form 
                 </p>
             </div>
 
@@ -52,7 +52,7 @@
                 <i class="fa fa-comment-o text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                 <hr class="w-1/2 my-4 mx-auto">
                 <p class="text-lg font-semibold">
-                    Choose a service
+                    Give us the instructions
                 </p>
             </div>
 
@@ -68,7 +68,7 @@
                 <i class="fa fa-download text-white py-3" style="font-size: 50px;" aria-hidden="true"></i>
                 <hr class="w-1/2 my-4 mx-auto">
                 <p class="text-lg font-semibold">
-                    Choose a service
+                    Download your paper
                 </p>
             </div>
 
